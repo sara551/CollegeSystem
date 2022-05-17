@@ -1,0 +1,16 @@
+.navElements{
+	float: right;
+	width: 20%;
+	margin-right: 7%;
+	text-align: center;
+	display: inline-block;
+}
+.navElements .element{
+	display: inline-block;
+	float: left;
+	width: 45%;
+	margin-top: 11%;
+	position: relative;
+	font-size: 140%;
+	text-transform: uppercase;
+}

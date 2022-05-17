@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.grey{
+	width: 100%;
+	height: 140px;
+	position: relative;
+	background-color:  gray;
+	z-index: 1;
+}
+.twoColumns{
+	width: 80%;
+	height: 100%;
+	position: relative;
+}
+.blue{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	float: left;
+	background-color:  rgba(23, 64, 163, 1.00);
+}
+.curves{
+	position: relative;
+	float: right;
+	width: 30%;
+	height: 100%;
+	background: gray;
+}
+.curve::after,.curve::before{
+	content: "";
+	display: inline-block;
+	top: -4px;
+
+}
+.curve::after {
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	border-color: transparent transparent transparent rgba(23, 64, 163, 1.00);
+	border-style: solid;
+	border-width: 0px 0px 203px 206px;
+}
+.curve::before {
+	width: 135px;
+	height: 62px;
+	background-color: rgba(139,0,0,1.00);
+	position: absolute;
+	left: 50px;
+	top: 83px !important;
+	transform: skew(0deg, -44.5deg);
+}
+.title{
+	font-size: 50px;
+	text-align: center;
+	position: absolute !important;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+	position: absolute;
+	top: 25px;
+	z-index: 999;
+	left: 100px;
+	text-shadow: 3px 3px 3px gray;
+}
+.icon{
+	position: relative;
+	top: 18px;
+	right: 25px;
+}
+.whiteBox{
+	width: 76%;
+	height: 70px;
+	float: right;
+	background: white;
+	position: relative;
+	z-index: 999;
+}

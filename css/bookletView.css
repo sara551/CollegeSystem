@@ -1,0 +1,30 @@
+.container{
+	width: 70%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.downloadLink{
+	display: block;
+	float: left;
+	margin-left: 140px;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+}
+.row1{
+	width: 100%;
+	height: auto;
+}
+.pdfData{
+	width: 50%;
+	height: 400px;
+	float: left;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.pdfData iframe{
+	width: 400px;
+	height: 85%;
+}

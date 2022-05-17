@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<title>navbar</title>
+		<link href="css/generalHeaderStyle.css" rel="stylesheet">
+		<link href="css/restAdminPagesStyle.css" rel="stylesheet">
+		<script src="js/pageHeader.js"></script>
+		<script src="js/jquery-3.6.0.js"></script>
+		<script src="js/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$(".functionTitle").mouseover(function(){
+					$(".adminPart").slideDown(2000);
+				});
+				$(".functions").mouseleave(function(){
+					$(".adminPart").slideUp(2000);
+				});
+			});
+			window.addEventListener("scroll",function(){
+				var header = document.querySelector("header");
+				var element = document.querySelector("tag");
+				var element1 = document.querySelector("color");
+				var element2 = document.querySelector("change");
+				header.classList.toggle("sticky",window.scrollY >0);
+				element.classList.toggle("elementColor",window.scrollY >0);
+				element1.classList.toggle("elementColor",window.scrollY >0);
+				element2.classList.toggle("elementColor",window.scrollY >0);
+			});
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<nav>
+				<div class="divLogo">
+					<img src="images/finalblackcoatlogo.png" height="80" class="logo">
+					<div class="navElements">
+						<tag class="element tag"><a href="adminHome.php">home</a></tag>
+						<div class="element functions">
+							<color class="functionTitle color"><a href="#">Functions</a></color>
+							<div class="adminPart">
+								<div class="functionsElements">
+									<div class="singleElement">
+										<div class="functionName"><a href="addStudent.php">Add Student</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addCourse.php">Add Course</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addBooklet.php">Add Booklet</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addSchedule.php">Add Schedule</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addTimetable.php">Add Timetable</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addVideo.php">Add Video</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addTestSolution.php">Add Test Solutions</a></div>
+									</div>
+									<div class="singleElement">
+										<div class="functionName"><a href="addWeeklyMarks.php">Add Weekly Marks</a></div>
+									</div>
+									<div class="singleElement booklet">
+										<div class="functionName"><a href="addPTs.php">Add PT1 &amp; PT2</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<change class="element change"><a href="logout.php">logout</a></change>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</body>
+</html>

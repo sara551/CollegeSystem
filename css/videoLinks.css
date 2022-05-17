@@ -1,0 +1,27 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.VideosConatiner{
+	width: 75%;
+	float: right;
+	z-index: 1;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-top: 30px;
+	margin-right: auto;
+}
+.row1{
+	width: 100%;
+	height:auto;
+}
+iframe{
+	margin-bottom: 80px;
+}
+.frameSpace{
+	width: 120px;
+	display: inline-block;
+	height: 100%;
+}

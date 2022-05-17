@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>navbar</title>
+		<link href="css/generalHeaderStyle.css" rel="stylesheet">
+		<link href="css/adminHomeHeader.css" rel="stylesheet">
+		<script src="js/jquery-3.6.0.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/pageHeader.js"></script>
+		<script>
+			window.addEventListener("scroll",function(){
+				var header=document.querySelector("header");
+				var element = document.querySelector("tag");
+				var element1 = document.querySelector("color");
+				element.classList.toggle("elementColor",window.scrollY >0);
+				element1.classList.toggle("elementColor",window.scrollY >0);
+				header.classList.toggle("sticky",window.scrollY >0);
+			});
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<nav>
+				<div class="divLogo">
+					<img src="images/finalblackcoatlogo.png" height="80" class="logo">
+					<div class="navElements">
+						<tag class="element tag"><a href="adminHome.php">home</a></tag>
+						<color class="element color"><a href="logout.php">logout</a></color>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.navElements{
+	float: right;
+	width: 34%;
+	margin-right: 7%;
+	text-align: center;
+	height: 100px;
+	display: inline-block;
+}
+.navElements .element{
+	display: inline-block;
+	float: left;
+	width: 33.3%;
+	height: 65px;
+	z-index: 1;
+	margin-top: 7%;
+	position: relative;
+	font-size: 140%;
+	text-transform: uppercase;
+}
+.navElements .element .functions{
+	height: 500px;
+}
+.adminPart{
+	width: 250px;
+	height: auto;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	right: 0px;
+	top: 65px;
+	display: none;
+}
+.functionsElements{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+.singleElement{
+	width: 100%;
+	height: 45px;
+	margin-top: 25px;
+	border-bottom: 1px solid rgba(128,128,128,1.00);
+}
+.functionName{
+	height: auto;
+	font-size: 90%;
+	color: white;
+	transition: 1s;
+}
+.functionName:hover{
+	font-size: 105%;
+	text-shadow: 2px 3px 3px black;
+}
+.booklet{
+	border: none;
+}
+.functionTitle{
+	width: 100%;
+	height: 70px;
+}
